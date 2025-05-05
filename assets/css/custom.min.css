@@ -250,10 +250,11 @@ html.lenis body {
 
 .themeBtn__secondary {
 	background: var(--black);
+	color: var(--white);
 }
 
 .themeBtn:hover {
-	color: var(--black);
+	color: var(--white);
 	background: var(--black);
 }
 
@@ -301,7 +302,7 @@ html.lenis body {
 .header-main__logo h3 {
 	font-size: 1.5rem;
 	font-weight: 600;
-	color: var(--black);
+	color: var(--white);
 	text-transform: uppercase;
 	font-family: var(--font-poppins);
 	margin: 0;
@@ -319,7 +320,7 @@ html.lenis body {
 }
 
 .header-main__nav .nav-item .nav-link {
-	color: var(--black);
+	color: var(--white);
 	font-size: 1.125rem;
 	font-weight: 500;
 	padding: .5em 0;
@@ -354,7 +355,7 @@ html.lenis body {
 /* main-banner */
 .main-banner {
 	height: 1000px;
-	background: url("../images/main-banner-1.jpg") no-repeat center / cover fixed;
+	background: url("../images/banner-bg.png") no-repeat center / cover fixed;
 	overflow: unset;
 }
 
@@ -368,8 +369,8 @@ html.lenis body {
 	user-select: none;
 }
 
-.main-banner__content * {
-	color: var(--black);
+.main-banner__content .subHeading {
+	color: var(--white);
 }
 
 .main-banner__content h1,
@@ -378,9 +379,8 @@ html.lenis body {
 	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 1;
-	margin: 0;
-	/* text-shadow: 5px 0 5px #00000080; */
-	color: var(--black);
+	margin: 0;	
+	color: var(--white);
 }
 
 .main-banner__content h1 span {
@@ -426,7 +426,6 @@ html.lenis body {
 	width: 80px;
 	aspect-ratio: 3/2;
 	object-fit: contain;
-	filter: brightness(0) invert(1);
 }
 
 .banner_card_content h4 {
@@ -460,7 +459,7 @@ html.lenis body {
 /* review-section */
 .review-section,
 .article-section {
-	background: url("../images/main-banner-1.jpg") no-repeat center / cover fixed;
+	background: url("../images/banner-bg.png") no-repeat center / cover fixed;
 }
 
 .review-section {
@@ -475,6 +474,11 @@ html.lenis body {
 	inset: 0;
 	background: var(--secondary);
 	opacity: 40%;
+}
+
+.review-section .subHeading,
+.contact-section .subHeading {
+	color: var(--black);
 }
 
 .review_card {
@@ -542,12 +546,16 @@ html.lenis body {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-}
+}																																											
 
 /* article-section */
 .article_sites {
-	border: 2px solid var(--primary);
+	border: 2px solid var(--black);
 	padding: 0.625rem;
+}
+
+.article_sites img {
+	filter: brightness(0) saturate(100%);
 }
 
 .articleSlider .swiper-wrapper {
@@ -558,7 +566,7 @@ html.lenis body {
 
 /* contact-section */
 .contact-section {
-	background: url("../images/main-banner-1.jpg") no-repeat center / cover fixed;
+	background: url("../images/banner-bg.png") no-repeat center / cover fixed;
 	padding: 6rem 0 10rem;
 }
 
@@ -625,13 +633,13 @@ html.lenis body {
 }
 
 .footer * {
-	color: var(--black);
+	color: var(--white);
 }
 
 .footer_logo a h3 {
 	font-size: 2.25rem;
 	font-weight: 600;
-	color: var(--black);
+	color: var(--white);
 	text-transform: uppercase;
 	font-family: var(--font-poppins);
 }
@@ -650,6 +658,9 @@ html.lenis body {
 	border-radius: 50%;
 	font-size: 1.125rem;
 	background: var(--primary);
+}
+
+.footer_social li a i {
 	color: var(--black);
 }
 
@@ -684,11 +695,12 @@ html.lenis body {
 	display: grid;
 	place-items: center;
 	font-size: 12px;
+	color: var(--black);
 }
 
 .footer_links li a {
 	font-size: 1.125rem;
-	color: var(--black);
+	color: var(--white);
 }
 
 .footer_info .contact-info a span {
@@ -701,6 +713,11 @@ html.lenis body {
 	font-size: 1.375rem;
 	font-weight: 500;
 	margin: 0;
+	color: var(--white);
+}
+
+.footer_info .contact-info a div p {
+	color: var(--white);
 }
 
 .copyright {
@@ -712,7 +729,7 @@ html.lenis body {
 /* inner-pages */
 .inner-banner {
 	height: 650px;
-	background: url("../images/main-banner-1.jpg") no-repeat center 100%/ cover fixed;
+	background: url("../images/banner-bg.png") no-repeat center 100%/ cover fixed;
 }
 
 .inner-banner::before {
@@ -738,7 +755,7 @@ html.lenis body {
 }
 
 .blog_card {
-	background-color: var(--black);
+	/* background-color: var(--black); */
 	box-shadow: 0 0 12px rgb(0 0 0 / 28%);
 	transition: transform 0.3s ease;
 	margin-bottom: 1.875rem;
@@ -804,7 +821,7 @@ html.lenis body {
 }
 
 .contactForm {
-	background-color: var(--black);
+	/* background-color: var(--black); */
 	padding: 2rem 1.75rem;
 	border: 5px double var(--primary);
 }
